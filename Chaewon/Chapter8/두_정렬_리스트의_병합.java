@@ -12,18 +12,23 @@ public class 두_정렬_리스트의_병합 {
         ListNode<Integer> node2 = new ListNode<>();
         node2 = node2.addIntData(data2);
 
-        ListNode<Integer> answer = new ListNode();
+        ListNode<Integer> answer = new ListNode<>();
 
-        while(node1 != null && node2 != null){
-            if(node1.val > node2.val){
-                answer = node1;
-                answer.next = node2;
-            }else{
-                answer = node2;
-                answer.next = node1;
-            }
-        }
+        this.recursive(node1, node2);
         return node2;
+    }
+
+    public ListNode<Integer> recursive(ListNode<Integer> node1, ListNode<Integer> node2){
+        if(node1 == null) return node2;
+        if(node2 == null) return node1;
+
+        if(node1.val > node2.val){
+            node2.next = recursive(node1, node2.next);
+            return node2;
+        }else{
+            node1.next = recursive(node1.next, node2);
+            return node1;
+        }
     }
 
     public LinkedList myAnswer(){
@@ -42,32 +47,5 @@ public class 두_정렬_리스트의_병합 {
         Collections.sort(input1);
 
         return input1;
-    }
-
-    /**
-     * 책 - 재귀함수로 풀이
-     * @return
-     */
-    public ListNode<Integer> useRecursive(){
-        ListNode<Integer> node1 = new ListNode(1);
-        node1.next = new ListNode(2);
-        node1.next.next = new ListNode(5);
-
-        ListNode<Integer> node2 = new ListNode(1);
-        node2.next = new ListNode(3);
-        node2.next.next = new ListNode(4);
-
-        // 두 노드 중 널이 아닌 노드를 리턴
-        if(node1 == null) return node2;
-        if(node2 == null) return node1;
-        
-        // 1 , 1 들어오면
-        if(node1.val > node2.val){
-//            node2.next = useRecursive(node1.next, node2);
-            return node2;
-        }else { // 여기 동작하고 useResursive(1, 3) 이 동작하는 동시에 1 출력
-//            node1.next = useRecursive(node1, node2.next);
-            return node1;
-        }
     }
 }

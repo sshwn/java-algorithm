@@ -21,4 +21,20 @@ public class 역순_연결_리스트 {
 
         return answer;
     }
+
+    public ListNode<Integer> myAnswerUseListNode(){
+        int[] data = {1, 2, 3, 4, 5, 6};
+        ListNode<Integer> node = new ListNode<>();
+        node = node.addIntData(data);
+
+        ListNode<Integer> temp = null;
+        while(node != null){
+            ListNode<Integer> next = node.next;
+            node.next = temp;
+            temp = node;
+            node = next;
+        }
+
+        return temp;
+    }
 }
