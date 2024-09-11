@@ -1,6 +1,6 @@
-package Hyeonu.Chapter8;
+package Hyeonu.Chapter7;
 
-public class P_5_자신을제외한배열의_곱 {
+public class P_11_자신을제외한배열의_곱 {
     public int[] Solution(int[] nums) {
         int[] result = new int[nums.length];
         int p = 1;

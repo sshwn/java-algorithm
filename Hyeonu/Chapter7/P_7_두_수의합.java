@@ -1,9 +1,9 @@
-package Hyeonu.Chapter8;
+package Hyeonu.Chapter7;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class P_1_두_수의합 {
+public class P_7_두_수의합 {
     public int[] Solution2(int[] nums, int target) {
         Map<Integer, Integer> numsMap = new HashMap<>();
         // 키와 값을 바꿔서 맵에 저장

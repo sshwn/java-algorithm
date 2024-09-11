@@ -1,8 +1,8 @@
-package Hyeonu.Chapter8;
+package Hyeonu.Chapter7;
 
 import java.util.Arrays;
 
-public class P_4_배열파티션1 {
+public class P_10_배열파티션1 {
     public int Solution(int[] nums) {
         int answer = 0;
         Arrays.sort(nums);

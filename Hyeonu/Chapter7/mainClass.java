@@ -2,29 +2,28 @@ package Hyeonu.Chapter7;
 
 public class mainClass {
     public static void main(String[] args) {
-        P_1_유효한_팰린드롬 p1_유효한_팰린드롬 = new P_1_유효한_팰린드롬();
-        String s1 = "Do geese see God";
-        System.out.println(p1_유효한_팰린드롬.myTest(s1));
-        System.out.println(p1_유효한_팰린드롬.isPalindrome2(s1));
-        System.out.println(p1_유효한_팰린드롬.isPalindrome(s1));
-
-        P_2_문자열_뒤집기 p2_문자열_뒤집기 = new P_2_문자열_뒤집기();
-        char[] s2 = {'h','e','l','l','o'};
-        p2_문자열_뒤집기.myTest(s2);
-        p2_문자열_뒤집기.reverseString(s2);
+        P_7_두_수의합 p1_두_수의합 = new P_7_두_수의합();
+        int[] nums = {2,6,11,15};
+        int target = 8;
+        p1_두_수의합.Solution(nums, target);
+        p1_두_수의합.Solution2(nums, target);
 
         // 추후 진행
-        P_3_로그_파일_재정렬 p3_로그_파일_재정렬 = new P_3_로그_파일_재정렬();
+        P_8_빗물_트래핑 p2_빗물_트래핑 = new P_8_빗물_트래핑();
 
-        P_4_가장_흔한_단어 p4_가장_흔한_단어 = new P_4_가장_흔한_단어();
-        String paragraph = "Ross hit a ball, the hit BALL flew far away after it was hit";
-        String[] banned = {"hit"};
-        System.out.println(p4_가장_흔한_단어.myTest(paragraph, banned));
+        P_9_세_수의_합 p3_세_수의_합 = new P_9_세_수의_합();
+        int[] nums2 = {-1, 0, 1, 2, -1, -5};
+        p3_세_수의_합.Solution(nums2);
+
+        P_10_배열파티션1 p4_배열파티션1 = new P_10_배열파티션1();
+        int[] nums3 = {1,3,4,2};
+        p4_배열파티션1.Solution(nums3);
+
+        P_11_자신을제외한배열의_곱 p5_자신을제외한배열의_곱 = new P_11_자신을제외한배열의_곱();
+        int[] nums4 = {1,3,5,7};
+        p5_자신을제외한배열의_곱.Solution(nums4);
 
         // 추후 진행
-        P_5_그룹_애너그램 p5_그룹_애너그램 = new P_5_그룹_애너그램();
-
-        // 추후 진행
-        P_6_가장_긴_팰린드롬_부분_문자열 p6_가장_긴_팰린드롬_부분_문자열 = new P_6_가장_긴_팰린드롬_부분_문자열();
+        P_12_주식을_사고팔기_가장좋은_시점 p6_주식을_사고팔기_가장좋은_시점 = new P_12_주식을_사고팔기_가장좋은_시점();
     }
 }

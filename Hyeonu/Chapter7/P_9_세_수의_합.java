@@ -1,4 +1,4 @@
-package Hyeonu.Chapter8;
+package Hyeonu.Chapter7;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import java.util.List;
  *          [-1,-1,2]
  *     ]
  */
-public class P_3_세_수의_합 {
+public class P_9_세_수의_합 {
     public List<List<Integer>> Solution(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         int left, right, sum;
