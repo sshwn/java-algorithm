@@ -25,12 +25,12 @@ public class 두_정렬_리스트의_병합 {
      * 책 - 재귀함수로 풀이
      * @return
      */
-    public ListNode useRecursive(){
-        ListNode node1 = new ListNode(1);
+    public ListNode<Integer> useRecursive(){
+        ListNode<Integer> node1 = new ListNode(1);
         node1.next = new ListNode(2);
         node1.next.next = new ListNode(5);
 
-        ListNode node2 = new ListNode(1);
+        ListNode<Integer> node2 = new ListNode(1);
         node2.next = new ListNode(3);
         node2.next.next = new ListNode(4);
 

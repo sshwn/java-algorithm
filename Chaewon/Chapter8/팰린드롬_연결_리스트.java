@@ -24,14 +24,14 @@ public class 팰린드롬_연결_리스트 {
      * @return
      */
     public boolean useStack(){
-        ListNode head = new ListNode(1);
+        ListNode<Integer> head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(2);
         head.next.next.next.next = new ListNode(1);
 
         Stack<Integer> stack = new Stack();
-        ListNode node = head;
+        ListNode<Integer> node = head;
         while(node != null){
             stack.add(node.val);
             node = node.next;
@@ -52,7 +52,7 @@ public class 팰린드롬_연결_리스트 {
      * @return
      */
     public boolean useDeque(){
-        ListNode head = new ListNode(1);
+        ListNode<Integer> head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(2);
