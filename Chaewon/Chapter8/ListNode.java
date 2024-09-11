@@ -29,4 +29,16 @@ public class ListNode<E> {
         }
         return head.next;
     }
+
+    public String toString(ListNode<E> node1){
+        String s = "";
+        while(node1.next != null){
+            s += node1.val + " -> ";
+            node1 = node1.next;
+        }
+
+        // 마지막 하나는 화살표 없이 출력
+        s += node1.val + "";
+        return s;
+    }
 }
