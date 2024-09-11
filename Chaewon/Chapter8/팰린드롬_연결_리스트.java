@@ -5,6 +5,29 @@ import java.util.Stack;
 import java.util.LinkedList;
 
 public class 팰린드롬_연결_리스트 {
+    public boolean myAnswerUseListNode(){
+        int[] data = {1, 2, 3, 2, 1};
+        ListNode<Integer> input = new ListNode<>();
+        // listNode에 값 넣음
+        input = input.addIntData(data);
+
+        // listNode의 값을 deque에 넣음
+        Deque<Integer> deque = new LinkedList<>();
+        while(input != null){
+            deque.add(input.val);
+            input = input.next;
+        }
+
+        // deque의 양쪽에서 값을 꺼내면서 두 값이 같은지 비교
+        while(deque.size() > 1){
+            if(deque.pollFirst() != deque.pollLast()){
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     public boolean myAnswer(){
         int[] input = new int[]{1, 2, 3, 2, 1};
         Deque<Integer> deque = new LinkedList<>();
