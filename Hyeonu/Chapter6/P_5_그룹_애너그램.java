@@ -1,4 +1,4 @@
-package Hyeonu.Chapter7;
+package Hyeonu.Chapter6;
 
 /**
  * 문자열 배 열을 받아 애너그램 단위로 그룹핑하라

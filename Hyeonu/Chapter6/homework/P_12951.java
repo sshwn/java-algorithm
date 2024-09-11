@@ -1,4 +1,4 @@
-package Hyeonu.Chapter7.homework;
+package Hyeonu.Chapter6.homework;
 
 /**
  * https://school.programmers.co.kr/learn/courses/30/lessons/12951

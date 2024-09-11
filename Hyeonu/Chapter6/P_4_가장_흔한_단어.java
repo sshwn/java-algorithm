@@ -1,4 +1,4 @@
-package Hyeonu.Chapter7;
+package Hyeonu.Chapter6;
 
 import java.util.*;
 
