@@ -1,6 +1,5 @@
-package Chaewon.Section2;
+package Chaewon.Section2_스택과큐;
 import java.util.*;
-import java.io.*;
 
 public class Baekjoon_2018_수들의합5 {
     /**

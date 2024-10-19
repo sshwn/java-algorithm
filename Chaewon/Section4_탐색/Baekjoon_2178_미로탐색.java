@@ -1,4 +1,4 @@
-package Chaewon.Section4;
+package Chaewon.Section4_탐색;
 
 import java.io.*;
 import java.util.*;
