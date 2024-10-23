@@ -1,4 +1,4 @@
-package Chaewon.Section3;
+package Chaewon.Section3_정렬;
 import java.util.*;
 
 public class Baekjoon_1427_소트인사이드 {

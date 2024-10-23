@@ -1,4 +1,4 @@
-package Chaewon.Section3;
+package Chaewon.Section3_정렬;
 import java.util.*;
 
 public class Baekjoon_2750_수정렬하기 {
