@@ -1,4 +1,4 @@
-package Chaewon.Section2;
+package Chaewon.Section2_스택과큐;
 import java.io.*;
 import java.lang.*;
 
