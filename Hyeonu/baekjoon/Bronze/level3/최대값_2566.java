@@ -9,7 +9,7 @@ public class 최대값_2566 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[][] arr = new int[9][9];
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         int x = 0;
         int y = 0;
         for(int i = 0; i < 9; i++){
